@@ -1,1 +1,71 @@
+.card {
+    width: 296px;
+    height: 294px;
+}
+
+.card-badge-green {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.card-badge-red {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    
+}
+
+.card-badge-orange {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    transform: rotate(45deg);
+    text-align: center;
+    border: none;
+    
+    p {
+        transform: rotate(-45deg);
+        padding-top: 8px;
+        padding-left: px; 
+        margin-left: 6px ;
+    }
+}
+
+
+.fix {
+    width:60px ;
+    height: 62px;
+}
+
+.yatay {
+   width: 129px;
+   height: 62px; 
+}
+.dikey {
+    width: 62px;
+    height: 128px;
+}
+
+.card-top {
+    height: 295px; 
+    // width: 295px;
+    // padding-top: 255px; 
+    
+    
+}
+
+.card-top ul li{
+        
+    width: 33px;
+    height: 33px;
+    border-radius:0px;
+    font-size: 1rem;
+    list-style-type: none;
+
+}
 
