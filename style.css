@@ -1,1 +1,25 @@
+.zig-zag-leftsidebar-container {
+    width:850px ; 
+    height:1400px;
+    .card-zigzag {
+        height: 260px;
+        width:838px;
 
+    }
+    .card-title-zigzag {
+        a{
+            color: black;
+            font-weight: 300;
+        }
+        .zigzag-bar-arrow-icon  {
+            color: #1DC4D9 ;
+        }
+    }
+ }
+
+ .card-zigzag-2 {
+    color:#1DC4D9 ;
+ }
+.card-text-zigzag {
+    color:gray ;
+}
