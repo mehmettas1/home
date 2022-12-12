@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+ 
+  </head>
+  <body>
+    <nav class="menu mt-12 bg-[#eee] h-[60px] rounded-[10px] mx-auto my-[10px] w-[700px]">
+      <ul class="flex h-[60px] items-center relative ">
+        <li class="relative">
+          <a href="#" class="hover:bg-[#fff] block rounded-[40px] text-red-800 h-10  leading-[60px] text-base px-4">
+            Anasayfa
+          </a>
+        </li>
+        <li class="relative">
+          <a href="#" class="hover:bg-[#fff] block rounded-[40px] text-red-800 h-10 leading-[60px] text-base px-4 ">
+            Hakkımda
+          </a>
+        </li>
+        <li data-dropdown class="group">
+          <a href="#" class="hover:bg-[#fff] block rounded-[40px] text-red-800 h-14 leading-[60px] text-base px-4">
+            Dersler
+          </a>
+          <div class="dropdown absolute w-[200px] top-14 pt-[10px]  ">
+            <ul class=" bg-[#f5f5f5] relative text-black hidden pt-4 group-hover:block">
+              <li  >
+                <a href="#" class="block text-sm font-medium px-[15px] hover:bg-white" >
+                  CSS Dersleri
+                </a>
+              </li>
+              <li data-dropdown class="relative">
+                <a href="#" class="block group text-sm font-medium px-[15px]  ">
+                  PHP Dersleri
+                </a>
+                <div class="dropdown absolute bg-slate-600 left-[205px] top-0 ml-0 hidden group-hover:block">
+                  <ul class=" ">
+                    <li>
+                      <a href="#" class="block text-sm font-medium px-[15px]">Giriş</a>
+                    </li>
+                    <li data-dropdown>
+                      <a href="#">Fonksiyonlar</a>
+                      <div class="dropdown">
+                        <ul>
+                          <li>
+                            <a href="#">Dizi Fonksiyonları</a>
+                          </li>
+                          <li>
+                            <a href="#">Tanımı</a>
+                          </li>
+                          <li>
+                            <a href="#">Hanımı</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#">OOP</a>
+                    </li>
+                    <li>
+                      <a href="#">Veritabanı</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#" class="block text-sm font-medium px-[15px] hover:bg-white">
+                  HTML Dersleri
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block text-sm font-medium px-[15px] hover:bg-white">
+                  MySQL Dersleri
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+ 
+  </body>
+</html>
