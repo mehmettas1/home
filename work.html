@@ -8,107 +8,286 @@
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
   <body>
-    <style>
-        ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-        }
-        li {
-          display: inline-block;
-        }
-        li a {
-          display: block;
-          padding: 8px;
-          text-decoration: none;
-        }
-        li a:hover {
-          background-color: #555;
-          color: white;
-        }
-        li ul {
-          display: none;
-        }
-        li:hover ul {
-          display: block;
-          position: absolute;
-        }
-      </style>
-      
-      <ul>
-        <li><a href="#">Menu 1</a>
-          <ul>
-            <li><a href="#">Alt Menu 1</a></li>
-            <li><a href="#">Alt Menu 2</a></li>
-            <li><a href="#">Alt Menu 3</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Menu 2</a>
-          <ul>
-            <li><a href="#">Alt Menu 4</a></li>
-            <li><a href="#">Alt Menu 5</a></li>
-            <li><a href="#">Alt Menu 6</a></li>
-          </ul>
-        </li>
-      </ul>
-      
-
- <!-- <header class="border-b border-[#dee0ea]" >
-    <div class="global-notification bg-[#1267ef] px-[14px] text-center text-white text-xs">
-      <p>
-        SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY
-        - OFF 50%!
-        <a href="shop.html" class="text-white font-semibold">SHOP NOW</a>
-      </p>
-    </div>
-    <div class="header-row h-[90px] flex items-center">
-      <div class="container">
-        <div class="header-wrapper flex justify-center items-center ">
-          <div class="header-left"><a href="#" class="logo text-2xl font-medium flex mr-12">LOGO</a></div>
-          <div class="header-center">
-            <nav class="navigation">
-              <ul class="menu-list flex gap-x-8 items">
-                <li class="menu-list-item flex relative items-center h-[90px] group">
-                  <a href="#" class="menu-link active text-2xl font-medium uppercase relative "
-                    >Home <i class="bi bi-chevron-down"></i>
-                  </a>
-                  <div class="menu-dropdown-wrapper absolute top-full -left-[30px] opacity-0 invisible group-hover:opacity-100 group-hover:visible">
-                    <ul class="menu-dropdown-content w-[220px] bg-white border-2 border-[#dee0ea] flex flex-col py-[18px] gap-y-8">
-                      <li class="relative ">
-                        <a href="#" class="">Home Clean</a>
-                        
-                            <ul class="absolute top-full border-2 w-[220px] opacity-0 left-60 invisible group-hover:visible group-hover:opacity-100">
-                                <li>
-                                    <a href="#">Home Collection</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Home Minimal</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Home Modern</a>
-                                  </li>
-                                 
-                            </ul>
-                       
+    <div class="cascader container mx-auto mt-6">
+      <div class="bg-gray-warm-600 h-24 w-full group">
+        <ul class="items flex gap-x-8 ">
+          <li class=" relative flex h-[90px] items-center">
+            <a
+              href="#"
+              class="active hover:bg-gray-warm-500 relative  ml-4 h-8 w-36 text-center text-2xl font-normal uppercase hover:rounded-2xl hover:text-white"
+              >Search
+            </a>
+            <div
+              class=" absolute top-[98px] text-center pb-5 invisibl group-hover:visible group-hover:opacity-100 "
+            >
+              <ul
+                class="bg-gray-warm-600 flex w-[220px] flex-col gap-y-8 border-2 border-[#dee0ea] py-[18px]" id="test"
+              >
+                <li class="relative ">
+                  <a href="#" id="" class="button-1 hover:text-white ">Regular/Paragraph1</a>
+                  <ul class="child1 absolute hidden -top-[6px] " id="">
+                    <li
+                      class="bg-gray-warm-600 absolute -top-3 left-[218px] w-[220px] h-8 "
+                    >
+                      <a href="#" class="button-11 hover:text-white ">Regular/Paragraph10</a>
+                      <ul class="child11 text-center" id="">
+                        <li
+                          class="bg-gray-warm-600 absolute top-0 h-8 left-[218px] ml-1 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph11</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-8 h-8 left-[218px] ml-1 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph12</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-16 h-8 left-[218px] ml-1 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph13</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                    class="bg-gray-warm-600 absolute top-5  left-[218px] w-[220px] h-8 "
+                  >
+                    <a href="#" class="button-21  hover:text-white">Regular/Paragraph20</a>
+                    <ul class="child21 hidden text-center" id="">
+                      <li
+                        class="bg-gray-warm-600 absolute top-0 h-8 left-[218px] ml-1 w-[220px] "
+                      >
+                        <a href="#">Regular/Paragraph21</a>
                       </li>
-                      <li>
-                        <a href="#">Home Collection</a>
+                      <li
+                        class="bg-gray-warm-600 absolute top-8 h-8 left-[218px] ml-1 w-[220px] "
+                      >
+                        <a href="#">Regular/Paragraph22</a>
                       </li>
-                      <li>
-                        <a href="#">Home Minimal</a>
+                      <li
+                        class="bg-gray-warm-600 absolute top-16 h-8 left-[218px] ml-1 w-[220px] "
+                      >
+                        <a href="#">Regular/Paragraph23</a>
                       </li>
-                      <li>
-                        <a href="#">Home Modern</a>
-                      </li>
-                     
                     </ul>
-                  </div>
+                  </li>
+                  <li
+                  class="bg-gray-warm-600 absolute top-13  left-[218px] w-[220px] h-8 "
+                >
+                  <a href="#" class="hover:text-white button-31" >Regular/Paragraph30</a>
+                  <ul class="child31 hidden text-center" id="">
+                    <li
+                      class="bg-gray-warm-600 absolute top-0 h-8 left-[218px] ml-1 w-[220px] "
+                    >
+                      <a href="#">Regular/Paragraph21</a>
+                    </li>
+                    <li
+                      class="bg-gray-warm-600 absolute top-8 h-8 left-[218px] ml-1 w-[220px] "
+                    >
+                      <a href="#">Regular/Paragraph22</a>
+                    </li>
+                    <li
+                      class="bg-gray-warm-600 absolute top-16 h-8 left-[218px] ml-1 w-[220px] "
+                    >
+                      <a href="#">Regular/Paragraph23</a>
+                    </li>
+                  </ul>
                 </li>
-               
-              
-        </div>
+             
+                  </ul>
+                </li>
+                <li class="relative">
+                  <a href="#" id="" class="button-2 hover:text-white ">Regular/Paragraph</a>
+                  <ul class="child2 absolute hidden top-0 " id="">
+                    <li
+                      class="bg-gray-warm-600 absolute -top-3 left-[218px] w-[220px] h-8 "
+                    >
+                      <a href="#" class="button-22 hover:text-white ">Regular/Paragraph1</a>
+                      <ul class="child22 text-center" id="">
+                        <li
+                          class="bg-gray-warm-600 absolute top-0 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph11</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-8 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph12</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-16 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph13</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                    class="bg-gray-warm-600 absolute top-5  left-[218px] w-[220px] h-8 "
+                  >
+                    <a href="#" >Regular/Paragraph2</a>
+                  </li>
+                  <li
+                  class="bg-gray-warm-600 absolute top-13  left-[218px] w-[220px] h-8 "
+                >
+                  <a href="#" >Regular/Paragraph3</a>
+                </li>
+             
+                  </ul>
+                </li>
+                <li class="relative">
+                  <a href="#" class="button-3 hover:text-white " id="">Regular/Paragraph</a>
+                  <ul class="child3 absolute hidden top-0 " id="">
+                    <li
+                      class="bg-gray-warm-600 absolute -top-3 left-[218px] w-[220px] h-8 "
+                    >
+                      <a href="#" class="button-33 hover:text-white ">Regular/Paragraph1</a>
+                      <ul class="child33 text-center" id="">
+                        <li
+                          class="bg-gray-warm-600 absolute top-0 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph11</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-8 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph12</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-16 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph13</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                    class="bg-gray-warm-600 absolute top-5  left-[218px] w-[220px] h-8 "
+                  >
+                    <a href="#" >Regular/Paragraph2</a>
+                  </li>
+                  <li
+                  class="bg-gray-warm-600 absolute top-13  left-[218px] w-[220px] h-8 "
+                >
+                  <a href="#" >Regular/Paragraph3</a>
+                </li>
+             
+                  </ul>
+                </li>
+                <li class="relative">
+                  <a href="#" class="button-4 hover:text-white " id="">Regular/Paragraph</a>
+                  <ul class="child4 absolute hidden top-0 " id="">
+                    <li
+                      class="bg-gray-warm-600 absolute -top-3 left-[218px] w-[220px] h-8 "
+                    >
+                      <a href="#" class="button-44 hover:text-white ">Regular/Paragraph1</a>
+                      <ul class="child44 text-center" id="">
+                        <li
+                          class="bg-gray-warm-600 absolute top-0 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph11</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-8 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph12</a>
+                        </li>
+                        <li
+                          class="bg-gray-warm-600 absolute top-16 h-8 left-[218px] ml-2 w-[220px] "
+                        >
+                          <a href="#">Regular/Paragraph13</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li
+                    class="bg-gray-warm-600 absolute top-5  left-[218px] w-[220px] h-8 "
+                  >
+                    <a href="#" >Regular/Paragraph2</a>
+                  </li>
+                  <li
+                  class="bg-gray-warm-600 absolute top-13  left-[218px] w-[220px] h-8 "
+                >
+                  <a href="#" >Regular/Paragraph3</a>
+                </li>
+             
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
-  </header> -->
+
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script>
+      const child1 = document.querySelector(".child1");
+      const child2 = document.querySelector(".child2");
+      const child3 = document.querySelector(".child3");
+      const child4 = document.querySelector(".child4");
+      const child11 = document.querySelector(".child11");
+      const child21 = document.querySelector(".child21");
+      const child22 = document.querySelector(".child22");
+      const child33 = document.querySelector(".child33");
+      const child31 = document.querySelector(".child31");
+      const child44 = document.querySelector(".child44");
+
+
+      const test1 = document.querySelectorAll("#test > li");
+      console.log(test1);
+
+      let cascaderDiv = document.querySelector(".cascader");
+      cascaderDiv.addEventListener("click", (e) => {
+        if (e.target.classList.contains("button-1")) {
+          child1.style.display = "block";
+          child2.style.display = "none";
+          child3.style.display = "none";
+          child4.style.display = "none";
+          child11.style.display = "none";
+          child21.style.display = "none";
+        } else if (e.target.classList.contains("button-11")) {
+          child11.style.display = "block";
+          child21.style.display = "none";
+          child31.style.display = "none";
+
+        }else if (e.target.classList.contains("button-21")) {
+          child21.style.display = "block";
+          child11.style.display = "none";
+          child31.style.display = "none";
+
+        }else if (e.target.classList.contains("button-31")) {
+          child31.style.display = "block";
+          child21.style.display = "none";
+          child11.style.display = "none";
+
+        }
+        
+        else if (e.target.classList.contains("button-2")) {
+          child2.style.display = "block";
+          child1.style.display = "none";
+          child3.style.display = "none";
+          child4.style.display = "none";
+          child22.style.display = "none";
+        } else if (e.target.classList.contains("button-22")) {
+          child22.style.display = "block";
+        } else if (e.target.classList.contains("button-3")) {
+          child3.style.display = "block";
+          child1.style.display = "none";
+          child2.style.display = "none";
+          child4.style.display = "none";
+          child33.style.display = "none";
+        } else if (e.target.classList.contains("button-33")) {
+          child33.style.display = "block";
+        } else if (e.target.classList.contains("button-4")) {
+          child4.style.display = "block";
+          child1.style.display = "none";
+          child2.style.display = "none";
+          child3.style.display = "none";
+          child44.style.display = "none";
+        } else if (e.target.classList.contains("button-44")) {
+          child44.style.display = "block";
+        }
+      });
+    </script>
   </body>
 </html>
