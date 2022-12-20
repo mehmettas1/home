@@ -396,12 +396,12 @@ const firstUl =document.querySelector(".first-layer-ul");
 
 linkData.forEach((element)=>{
 const li1=document.createElement("li");
-li1.setAttribute("class","relative cursor-pointer first-layer-li");
+li1.setAttribute("class"," cursor-pointer first-layer-li");
 li1.innerHTML=element.linkAdi;
 firstUl.appendChild(li1);
 
 const ul2 = document.createElement("ul");
-ul2.setAttribute("class","absolute hidden flex flex-col left-[508px] -top-[18px] ml-1 second-layer-ul");
+ul2.setAttribute("class","absolute hidden flex flex-col left-[508px] top-[0] ml-1 second-layer-ul");
 li1.appendChild(ul2);
 
 
@@ -440,12 +440,42 @@ const thirdLi =document.querySelectorAll(".third-layer-li");
 
 firstLi.forEach((element)=>{
     element.addEventListener('click',(item)=>{
+      
+      if (item.target.querySelector(".second-layer-ul")) {
         document.querySelectorAll(".second-layer-ul").forEach((el)=>{
             el.style.display = 'none'
         })
+        
+          
+        }
+        if (item.target.querySelector(".second-layer-ul")) {
+          item.target.querySelector(".second-layer-ul").style.display = 'block';
+          
+        }
 
-       item.target.querySelector(".second-layer-ul").style.display = 'block'
-       
+        
+        
+
+       item.target.querySelector(".second-layer-ul ")?.addEventListener('click',(li)=>{
+
+         if (li.target.querySelector(".third-layer-ul")) {
+          document.querySelectorAll(".third-layer-ul").forEach((el)=>{
+            el.style.display="none"
+          })
+         }
+        if(li.target.querySelector(".third-layer-ul")){
+           li.target.querySelector(".third-layer-ul").style.display ="block";
+         }
+        })
+
+    
     })
     
 })
+
+document.querySelectorAll(".third-layer-li").forEach((el)=>{
+  el.addEventListener("click",(el)=>{
+    console.log(el.target.innerHTML);
+  })
+})
+// console.log(secondLi);
