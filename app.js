@@ -1,7 +1,7 @@
 const linkData = [
     {
       id: 1,
-      linkAdi: 'Teknoloji',
+      linkAdi: 'Teknoloji ',
       altLinkler: [
         {
           id: 1,
@@ -18,6 +18,14 @@ const linkData = [
             {
               id: 3,
               enAltLinkAdi: 'Arçelik',
+            },
+            {
+              id: 4,
+              enAltLinkAdi: 'beko',
+            },
+            {
+              id: 4,
+              enAltLinkAdi: 'keko',
             },
           ],
         },
@@ -72,6 +80,24 @@ const linkData = [
             {
               id: 3,
               enAltLinkAdi: 'Vestel',
+            },
+          ],
+        },
+        {
+          id: 4,
+          acilirLink: 'TV',
+          enAltLinkler: [
+            {
+              id: 1,
+              enAltLinkAdi: 'Samsung',
+            },
+            {
+              id: 2,
+              enAltLinkAdi: 'LG',
+            },
+            {
+              id: 3,
+              enAltLinkAdi: 'Arçelik',
             },
           ],
         },
@@ -396,31 +422,31 @@ const firstUl =document.querySelector(".first-layer-ul");
 
 linkData.forEach((element)=>{
 const li1=document.createElement("li");
-li1.setAttribute("class"," cursor-pointer first-layer-li");
+li1.setAttribute("class"," cursor-pointer first-layer-li pl-3  ");
 li1.innerHTML=element.linkAdi;
 firstUl.appendChild(li1);
 
 const ul2 = document.createElement("ul");
-ul2.setAttribute("class","absolute hidden flex flex-col left-[508px] top-[0] ml-1 second-layer-ul");
+ul2.setAttribute("class","absolute hidden flex flex-col left-[508px] top-[0] ml-1  second-layer-ul");
 li1.appendChild(ul2);
 
 
 
 element.altLinkler.forEach((el)=>{
 const li2=document.createElement("li");
-li2.setAttribute("class","bg-gray-400 cursor-pointer w-[508px] h-8 second-layer-li");
+li2.setAttribute("class","bg-gray-400 cursor-pointer w-[508px] h-[57px] second-layer-li ");
 li2.innerHTML=el.acilirLink;
 ul2.appendChild(li2);
 
 
 // 3katman
 const ul3 = document.createElement("ul");
-ul3.setAttribute("class","absolute hidden  flex flex-col left-[508px] top-0 ml-1 third-layer-ul");
+ul3.setAttribute("class","absolute hidden  flex flex-col left-[508px]  top-0 ml-1 third-layer-ul");
 li2.appendChild(ul3);
 
 el.enAltLinkler.forEach((ele)=>{
     const li3=document.createElement("li");
-    li3.setAttribute("class","bg-gray-400 cursor-pointer w-[508px] h-8 third-layer-li");
+    li3.setAttribute("class","bg-gray-400 cursor-pointer w-[508px] h-[57px] third-layer-li");
     li3.innerHTML=ele.enAltLinkAdi;
     ul3.appendChild(li3);
 })
