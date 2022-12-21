@@ -15,20 +15,21 @@
             <div class="my-auto px-4">
                 <div class="mb-3 ">
             
-                  <input type="text " placeholder="SEARCH" class="border-gray-mid-992 active:border-primary mt-[10px] h-6 w-[900px] border-[1.5px] py-3 px-5 text-[10px] font-normal text-gray-mid-992 placeholder-gray-mid-992 outline-none transition focus:border-gray-mid-992 disabled:cursor-default disabled:bg-[#F5F7FD]" />
+                  <input type="text " placeholder="SEARCH" class="border-gray-mid-992 active:border-primary mt-[10px] h-8 w-[94rem] border-[1.5px] py-3 px-5 text-[10px] font-normal text-gray-mid-992 placeholder-gray-mid-992 outline-none transition focus:border-gray-mid-992 disabled:cursor-default disabled:bg-[#F5F7FD]" />
                 </div>
-      
-               
                 
+                
+                <button class="w-20  h-10 border-2 border-red rounded-lg bg-red-500 text-white group ">kategori</button>
               </div>
-            <div
+              <div
               class=" absolute top-[98px] text-center  w-full pb-5 invisibl group-hover:visible group-hover:opacity-100  "
             >
               <ul
-                class="bg-gray-400 relative flex w-[508px] flex-col gap-y-8 border-2 border-[#dee0ea] py-[18px] first-layer-ul" 
+                class="bg-gray-400 relative flex w-[508px] flex-col gap-y-8 text-left  border-[#dee0ea] py-[18px] first-layer-ul" 
               >
                
               </ul>
+              
             </div>
           </li>
         </ul>
@@ -40,74 +41,6 @@
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     <script src="app.js"></script>
-    <script>
-      const child1 = document.querySelector(".child1");
-      const child2 = document.querySelector(".child2");
-      const child3 = document.querySelector(".child3");
-      const child4 = document.querySelector(".child4");
-      const child11 = document.querySelector(".child11");
-      const child21 = document.querySelector(".child21");
-      const child22 = document.querySelector(".child22");
-      const child33 = document.querySelector(".child33");
-      const child31 = document.querySelector(".child31");
-      const child44 = document.querySelector(".child44");
-
-
-      const test1 = document.querySelectorAll("#test > li");
-      console.log(test1);
-
-      let cascaderDiv = document.querySelector(".cascader");
-      cascaderDiv.addEventListener("click", (e) => {
-        if (e.target.classList.contains("button-1")) {
-          child1.style.display = "block";
-          child2.style.display = "none";
-          child3.style.display = "none";
-          child4.style.display = "none";
-          child11.style.display = "none";
-          child21.style.display = "none";
-        } else if (e.target.classList.contains("button-11")) {
-          child11.style.display = "block";
-          child21.style.display = "none";
-          child31.style.display = "none";
-
-        }else if (e.target.classList.contains("button-21")) {
-          child21.style.display = "block";
-          child11.style.display = "none";
-          child31.style.display = "none";
-
-        }else if (e.target.classList.contains("button-31")) {
-          child31.style.display = "block";
-          child21.style.display = "none";
-          child11.style.display = "none";
-
-        }
-        
-        else if (e.target.classList.contains("button-2")) {
-          child2.style.display = "block";
-          child1.style.display = "none";
-          child3.style.display = "none";
-          child4.style.display = "none";
-          child22.style.display = "none";
-        } else if (e.target.classList.contains("button-22")) {
-          child22.style.display = "block";
-        } else if (e.target.classList.contains("button-3")) {
-          child3.style.display = "block";
-          child1.style.display = "none";
-          child2.style.display = "none";
-          child4.style.display = "none";
-          child33.style.display = "none";
-        } else if (e.target.classList.contains("button-33")) {
-          child33.style.display = "block";
-        } else if (e.target.classList.contains("button-4")) {
-          child4.style.display = "block";
-          child1.style.display = "none";
-          child2.style.display = "none";
-          child3.style.display = "none";
-          child44.style.display = "none";
-        } else if (e.target.classList.contains("button-44")) {
-          child44.style.display = "block";
-        }
-      });
-    </script>
+   
   </body>
 </html>
